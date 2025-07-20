@@ -32,7 +32,7 @@ a{
 #search
 {
     font-family: Arial;
-    text-align: center;
+    right:0;
     width: 200px;
 }
 .cont
