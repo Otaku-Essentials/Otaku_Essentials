@@ -35,6 +35,15 @@ a {
     width: 200px;
 }
 
+label
+{
+    position: relative;
+    display: inline-block; 
+    border: 2px solid white;
+    text-align: center;  
+    color: white;
+    background-color: blueviolet;
+}
 .cont {
     display: flex;
     flex-wrap: wrap;
