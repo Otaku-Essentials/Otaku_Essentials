@@ -39,7 +39,7 @@ Search.addEventListener("input",()=>
         if(text.includes(value))
         {
             match=1;
-            card.style.display="block";
+            card.style.display="flex";
         }
         else
         {
