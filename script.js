@@ -3,6 +3,33 @@ const cards = document.querySelectorAll(".card");
 const no = document.getElementById("no");
 const v = document.getElementById("video");
 const Link = document.getElementById("Link");
+const categoryDrop = document.getElementById("category");
+const animeDrop = document.getElementById("anime");
+
+categoryDrop.addEventListener("change", () => {
+    const category = categoryDrop.value;
+    cards.forEach((card) => {
+        if (category === "all" || card.classList.contains(category)) {
+            card.style.display="flex";
+        }
+        else {
+            card.style.display="none";
+        }
+    });
+
+})
+animeDrop.addEventListener("change", () => {
+    const anime = animeDrop.value;
+    cards.forEach((card) => {
+        if (anime === "all" || card.classList.contains(anime)) {
+            card.style.display="flex";
+        }
+        else {
+            card.style.display="none";
+        }
+    });
+
+})
 Search.addEventListener("input",()=>
     {
         const value = Search.value.toLowerCase();
